@@ -69,6 +69,81 @@ header input:checked ~ .phoneVersion{
     transition:transform(.5s)
 }
 
+.firstSection{
+    height:450px;
+    background-image:url(./images/banner2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.firstSection .texts{
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.texts h1{
+    color:white;
+    font-size:40px;
+    
+}
+
+.texts p{
+    color:white;
+}
+
+.btn{
+    background-color:#EA6F66;
+    padding:5px 15px;
+    border:none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.texts button:hover{
+    background-color: white;
+    color:black
+}
+
+.infoCard{
+    width:700px;
+   
+    box-shadow:0 0 10px 1px grey;
+    display:flex;
+    margin:0 auto;
+    margin-top:-65px;
+    background-color: white;
+    padding:50px;
+    
+}
+
+.infoCard .left{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.infoCard img{
+    height:100%;
+    width:75%;
+    object-fit: cover;
+}
+
+.infoCard .right{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
 @media screen and (max-width: 900px){
     .mainNav{
         height: 50px;
@@ -92,12 +167,31 @@ header input:checked ~ .phoneVersion{
         font-size:14px;
     }
 
+    .firstSection{
+        height:300px;
+    }
 
+    .firstSection h1{
+        font-size:20px;
+        text-align:center;
+    }
 }
 
-@media screen and ( max-width:700px){
+@media screen and ( max-width:750px){
     .mainNav .icons  {
         display:none;
+    }
+
+    .infoCard{
+        flex-direction: column;
+        width:90%;
+        align-items: center;
+        gap:30px;
+    }
+
+    .infoCard .left, .infoCard .right{
+        width:100%;
+        
     }
 }
 
@@ -176,5 +270,7 @@ header input:checked ~ .phoneVersion{
     .phoneVersion ul li:hover a{
         color:black;
     }
+
+
 }
 
